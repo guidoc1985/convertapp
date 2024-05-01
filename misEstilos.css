@@ -1,0 +1,100 @@
+body{
+    background-image: url(img/world.jpeg);
+    background-size: cover;
+
+}
+
+.presentacion{
+    color: aliceblue;
+    text-align: center;
+    margin-left: 68%;
+    margin-top: 10%;
+    font-size: xx-large;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.nav-item{
+    color: aliceblue;
+}
+
+.fondoDistancia{
+    background-image: url(img/distance.jpeg);
+    background-size: cover;
+    margin-bottom: 40%;
+}
+
+.fondoMetro{
+    background-image: url(img/long.jpeg);
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center; /* Centra la imagen */
+    margin-bottom: 45%;
+   
+}
+
+.fondoTemp{
+    background-image: url(img/heat.jpeg);
+    background-size: cover;
+}
+
+.cantidad{
+    border-radius: 20px;
+}
+
+.todo{
+    text-align: center;
+    margin-top: 5%;
+    background-color: antiquewhite;
+    width: 20%;
+    margin-left: 38%;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.fondoPeso{
+    background-image: url(img/piedra.jpeg);
+    background-size: cover;
+}
+
+.navbar-toggler{
+    color: brown;
+    background-color: brown;
+}
+
+.fondoLitro{
+    background-image: url(img/agua.jpeg);
+    background-size: cover;
+}
+
+
+    
+@media screen and (max-width: 375px){
+
+.presentacion{
+    text-align:start;
+    font-size: larger;
+    margin-left: 5%;
+    margin-top: 110%;
+}
+body{
+    background-image: url(img/world.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    
+    
+
+}
+
+.todo{
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 20%;
+}
+
+
+}
