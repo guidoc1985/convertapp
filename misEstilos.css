@@ -68,6 +68,11 @@ body{
     background-size: cover;
 }
 
+.fondoBmi{
+    background-image: url(img/bascula.jpeg);
+    background-size: cover;
+}
+
 
     
 @media screen and (max-width: 375px){
