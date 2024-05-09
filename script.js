@@ -192,11 +192,135 @@ else if ( unidad === "mm" && unidad2 === "mic"){
 }else if ( unidad === "mm" && unidad2 === "miln"){
     let mm = cantidad / 1851999.3258722
     resultado.textContent = cantidad + " milímetros  son  " + mm + " Metros"
-}else if ( unidad === "mm" && unidad2 === "mt"){
-    let mm = cantidad / 1000
-    resultado.textContent = cantidad + " milímetros  son  " + mm + " Metros"
 }
 
+
+else if ( unidad === "mic" && unidad2 === "mt"){
+    let mic = cantidad / 1e-6
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Metros"
+}else if ( unidad === "mic" && unidad2 === "ft"){
+    let mic = cantidad / 304800
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Pies"
+}else if ( unidad === "mic" && unidad2 === "km"){
+    let mic = cantidad / 1000000000
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Kilómetros"
+}else if ( unidad === "mic" && unidad2 === "cm"){
+    let mic = cantidad / 10000
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Centímetros"
+}else if ( unidad === "mic" && unidad2 === "mm"){
+    let mic = cantidad / 1000
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Milímetros"
+}else if ( unidad === "mic" && unidad2 === "nan"){
+    let mic = cantidad * 1000
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Nanómetros"
+}else if ( unidad === "mic" && unidad2 === "mil"){
+    let mic = cantidad / 1609344497.8926
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Millas"
+}else if ( unidad === "mic" && unidad2 === "yr"){
+    let mic = cantidad / 914400
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Yardas"
+}else if ( unidad === "mic" && unidad2 === "pul"){
+    let mic = cantidad / 25400
+    resultado.textContent = cantidad + " micrómetro  son  " + mic + " Pulgadas"
+}
+
+
+else if ( unidad === "nan" && unidad2 === "mt"){
+    let nan = cantidad / 1e+9
+ resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Metros"
+}else if ( unidad === "nan" && unidad2 === "km"){
+    let nan = cantidad / 1e+12
+resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Kilómetros"
+}else if ( unidad === "nan" && unidad2 === "ft"){
+    let nan = cantidad /  3.048e+8
+resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Pies"
+}else if ( unidad === "nan" && unidad2 === "cm"){
+    let nan = cantidad / 1e+7
+ resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Centímetros"
+}else if ( unidad === "nan" && unidad2 === "mm"){
+    let nan = cantidad / 1e+6
+ resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Milímetros"
+}else if ( unidad === "nan" && unidad2 === "mic"){
+    let nan = cantidad / 1000
+ resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Micrómetros"
+}else if ( unidad === "nan" && unidad2 === "mil"){
+    let nan = cantidad / 1.609e+12
+ resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Millas"
+}else if ( unidad === "nan" && unidad2 === "yr"){
+    let nan = cantidad / 9.144e+8
+resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Yardas"
+}else if ( unidad === "nan" && unidad2 === "pul"){
+    let nan = cantidad / 2.54e+7
+resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Pulgadas"
+}else if ( unidad === "nan" && unidad2 === "miln"){
+    let nan = cantidad / 1.852e+12
+ resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Millas Náuticas"
+}
+
+else if ( unidad === "mil" && unidad2 === "mt"){
+    let mil = cantidad * 1609
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Metros"
+}else if ( unidad === "mil" && unidad2 === "ft"){
+    let mil = cantidad * 5280
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Pies"
+}else if ( unidad === "mil" && unidad2 === "km"){
+    let mil = cantidad * 1.609
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Kilómetros"
+}else if ( unidad === "mil" && unidad2 === "cm"){
+    let mil = cantidad * 160900
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Centímetros"
+}else if ( unidad === "mil" && unidad2 === "mm"){
+    let mil = cantidad * 1.609e+6
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Milimetros"
+}else if ( unidad === "mil" && unidad2 === "mic"){
+    let mil = cantidad *  1.609e+9
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Micrómetros"
+}else if ( unidad === "mil" && unidad2 === "nan"){
+    let mil = cantidad * 1.609e+12
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Nanómetros"
+}else if ( unidad === "mil" && unidad2 === "yr"){
+    let mil = cantidad * 1760
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Yardas"
+}else if ( unidad === "mil" && unidad2 === "pul"){
+    let mil = cantidad *  63360
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Pulgadass"
+}else if ( unidad === "mil" && unidad2 === "miln"){
+    let mil = cantidad /1.151
+ resultado.textContent = cantidad + " Millas  son  " + mil + " Millas Náuticas"
+}
+
+
+else if ( unidad === "yr" && unidad2 === "mt"){
+    let yr = cantidad /1.094
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Metros"
+}else if ( unidad === "yr" && unidad2 === "ft"){
+    let yr = cantidad *3
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Pies"
+}else if ( unidad === "yr" && unidad2 === "km"){
+    let yr = cantidad /1094
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Kilómetros"
+}else if ( unidad === "yr" && unidad2 === "cm"){
+    let yr = cantidad * 91.44
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Centímetros"
+}else if ( unidad === "yr" && unidad2 === "mm"){
+    let yr = cantidad *914.4
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Milímetros"
+}else if ( unidad === "yr" && unidad2 === "mic"){
+    let yr = cantidad * 914400
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Micrómetros"
+}else if ( unidad === "yr" && unidad2 === "nan"){
+    let yr = cantidad *9.144e+8
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Nanometros"
+}else if ( unidad === "yr" && unidad2 === "mil"){
+    let yr = cantidad / 1760
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Millas"
+}else if ( unidad === "yr" && unidad2 === "pul"){
+    let yr = cantidad * 36
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Pulgadas"
+}else if ( unidad === "yr" && unidad2 === "miln"){
+    let yr = cantidad / 2025
+ resultado.textContent = cantidad + " Yardas  son  " + yr + " Millas Náuticas"
+}
 
 else{
     resultado.textContent = "Por favor, selecciona una unidad.";
