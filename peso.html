@@ -19,9 +19,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-white fuente-principal" aria-current="page" href="distancia.html">Distance</a>
-              </li>
+            
               <li class="nav-item">
                 <a class="nav-link active text-white fuente-principal" aria-current="page" href="largo.html">Length</a>
               </li>
@@ -58,18 +56,40 @@
 <button onclick="convertirPies()">calcular</button>
 <h5 id="mensaje2">....</h5> -->
 
+
 <form id="conversorForm">
-    <label for="unidad">Selecciona la unidad:</label>
-    <select id="unidad" name="unidad">
-        <option id="kilos" value="kg">Kilograms</option>
-        <option id="pound" value="pd">Pounds</option>
-    </select><br>
-    <br>
-    <label for="cantidad">Cantidad:</label><br>
-    <input id="cantidad" type="number" id="cantidad" name="cantidad">
-    <br>
-    <br>
-    <button type="button" class="btn btn-warning" onclick="calcularKilos()">Calcular</button>
+  <label for="unidad">Selecciona la unidad:</label>
+  <select id="unidad" name="unidad">
+      <option id="Kilos" value="kg">Kilos</option>
+      <option id="tonelada" value="tn">Tonelada</option>
+      <option id="graml" value="gr">Gramo</option>
+      <option id="mg" value="mg">Miligramo</option>
+    <option id="microgr" value="micg">Microgramo</option>
+    <option id="toneladalarga" value="tnl">Tonelada Larga</option>
+    <option id="toneladacorta" value="tnc">Tonelada Corta</option>
+    <option id="stone" value="st">Stone</option>
+    <option id="libra" value="lib">Libra</option>
+    <option id="onza" value="oz">Onza</option>
+   
+  </select><br>
+  <br>
+  <select id="unidad2" name="unidad">
+    <option id="Kilos" value="kg">Kilos</option>
+    <option id="tonelada" value="tn">Tonelada</option>
+    <option id="graml" value="gr">Gramo</option>
+    <option id="mg" value="mg">Miligramo</option>
+  <option id="microgr" value="micg">Microgramo</option>
+  <option id="toneladalarga" value="tnl">Tonelada Larga</option>
+  <option id="toneladacorta" value="tnc">Tonelada Corta</option>
+  <option id="stone" value="st">Stone</option>
+  <option id="libra" value="lib">Libra</option>
+  <option id="onza" value="oz">Onza</option>
+</select><br>
+  <label for="cantidad">Cantidad:</label><br>
+  <input id="cantidad" type="number" id="cantidad" name="cantidad">
+  <br>
+  <br>
+  <button type="button" class="btn btn-warning" onclick="calcularPeso()">Calcular</button>
 </form>
 <div id="resultado"></div>
 </div>

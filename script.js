@@ -322,6 +322,73 @@ else if ( unidad === "yr" && unidad2 === "mt"){
  resultado.textContent = cantidad + " Yardas  son  " + yr + " Millas Náuticas"
 }
 
+
+
+else if ( unidad === "pul" && unidad2 === "mt"){
+    let pul = cantidad / 39.37
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Metros"
+}else if ( unidad === "pul" && unidad2 === "ft"){
+    let pul = cantidad / 12
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Pies"
+}else if ( unidad === "pul" && unidad2 === "km"){
+    let pul = cantidad / 39370
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Kilómetros"
+}else if ( unidad === "pul" && unidad2 === "cm"){
+    let pul = cantidad *2.54
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " centímetros"
+}else if ( unidad === "pul" && unidad2 === "mm"){
+    let pul = cantidad * 25.4
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " milímetros"
+}else if ( unidad === "pul" && unidad2 === "mic"){
+    let pul = cantidad * 25400
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Micrómetros"
+}else if ( unidad === "pul" && unidad2 === "nan"){
+    let pul = cantidad * 2.54e+7
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Nanóetros"
+}else if ( unidad === "pul" && unidad2 === "mil"){
+    let pul = cantidad / 63360
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Millas"
+}else if ( unidad === "pul" && unidad2 === "yr"){
+    let pul = cantidad / 36
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Yardas"
+}else if ( unidad === "pul" && unidad2 === "miln"){
+    let pul = cantidad / 72910
+ resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Millas Náuticas"
+}
+
+else if ( unidad === "miln" && unidad2 === "mt"){
+    let miln = cantidad *1852
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Metros"
+}else if ( unidad === "miln" && unidad2 === "ft"){
+    let miln = cantidad *6076
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Pies"
+}else if ( unidad === "miln" && unidad2 === "km"){
+    let miln = cantidad *1.852
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " kilómetros"
+}else if ( unidad === "miln" && unidad2 === "cm"){
+    let miln = cantidad *185200
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Centímetros"
+}else if ( unidad === "miln" && unidad2 === "mm"){
+    let miln = cantidad *1.852e+6
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Milimetros"
+}else if ( unidad === "miln" && unidad2 === "mic"){
+    let miln = cantidad *1.852e+9
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Micrómetros"
+}else if ( unidad === "miln" && unidad2 === "nan"){
+    let miln = cantidad *1.852e+12
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Nanómetros"
+}else if ( unidad === "miln" && unidad2 === "mil"){
+    let miln = cantidad *1.151
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Millas"
+}else if ( unidad === "miln" && unidad2 === "yr"){
+    let miln = cantidad * 2025
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Yardas"
+}else if ( unidad === "miln" && unidad2 === "pul"){
+    let miln = cantidad *72910
+ resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Pulgadas"
+}
+
+
 else{
     resultado.textContent = "Por favor, selecciona una unidad.";
 }
@@ -392,13 +459,161 @@ function calcularTemp(){
             function calcularBmi(){
                 let kilos = parseFloat(document.getElementById("kilos").value)
                 let altura = parseFloat(document.getElementById("altura").value)
+                let mensaje2 =document.getElementById("mensaje2")
               
                 let mensaje = document.getElementById("mensaje")
+                
 
                let resultado = kilos / Math.pow(altura,2);
 
-                mensaje.textContent = (" your BMI is " + resultado)
+                mensaje.textContent = (" your BMI is " + resultado);
 
+                if ( resultado < 18.5){
+                    mensaje2.textContent = ("Tu imc es bajo peso")
 
+                } else if  (resultado >18.6 && resultado <= 24.9){
+                        mensaje2.textContent = ("Tu imc es Normal")
+                  } 
+                  else if(resultado >= 25 && resultado <=29.9){
+                    mensaje2.textContent = ("Tu imc es sobre peso")
+                  }
+                  else if (resultado >30){
+                    mensaje2.textContent = ("Tu imc es obesidad")
+                  }
 
+                }
+
+            function calcularPeso() {
+                
+                const conversiones = {
+                    kg: {
+                        tn: cantidad => cantidad /1000,
+                        gr: cantidad => cantidad * 1000,
+                        mg: cantidad => cantidad * 1e+6,
+                        micg: cantidad => cantidad * 1e+9,                        
+                        tnl: cantidad => cantidad / 1016   ,
+                        tnc: cantidad => cantidad /907.2,
+                        st: cantidad => cantidad / 6.35,
+                        lib: cantidad => cantidad * 2.205,
+                        oz: cantidad => cantidad * 35.274,
+                        
+                    },
+                    tn: {
+                        kg: cantidad => cantidad *1000,
+                        gr: cantidad => cantidad * 1e+6    ,
+                        mg: cantidad => cantidad * 1e+9  ,
+                        micg: cantidad => cantidad * 1e+12,
+                        tnl: cantidad => cantidad /1.016,
+                        tnc: cantidad => cantidad / 1.102,
+                        st: cantidad => cantidad *157.5,
+                        lib: cantidad => cantidad * 2205,
+                        oz: cantidad => cantidad *35270,
+                    },
+                    gr: {
+                        kg: cantidad => cantidad /1000,
+                        tn: cantidad => cantidad / 1e+6    ,
+                        mg: cantidad => cantidad * 1000 ,
+                        micg: cantidad => cantidad * 1e+6,                        
+                        tnl: cantidad => cantidad /1.016e+6         ,
+                        tnc: cantidad => cantidad / 907200,
+                        st: cantidad => cantidad /6350,
+                        lib: cantidad => cantidad /453.6,
+                        oz: cantidad => cantidad /  28.35,
+                    },
+                    mg: {
+                        kg: cantidad => cantidad /1e+6 ,
+                        tn: cantidad => cantidad / 1e+9    ,
+                        gr: cantidad => cantidad / 1000 ,
+                        micg: cantidad => cantidad * 1000,                        
+                        tnl: cantidad => cantidad /1.016e+9    ,
+                        tnc: cantidad => cantidad /  9.072e+8,
+                        st: cantidad => cantidad /6.35e+6,
+                        lib: cantidad => cantidad /453600,
+                        oz: cantidad => cantidad / 28350,
+                    },
+
+                    // aca me quedé
+                    micg: {
+                        kg: cantidad => cantidad /1e+9,
+                        tn: cantidad => cantidad / 1e+12    ,
+                        gr: cantidad => cantidad /1e+6 ,
+                        mg: cantidad => cantidad / 1000,                        
+                        tnl: cantidad => cantidad /1.016e+12        ,
+                        tnc: cantidad => cantidad / 9.072e+11,
+                        st: cantidad => cantidad /6.35e+9,
+                        lib: cantidad => cantidad /4.536e+8,
+                        oz: cantidad => cantidad /  2.835e+7,
+                    },
+                    tnl: {
+                        kg: cantidad => cantidad *1016,
+                        tn: cantidad => cantidad * 1.016    ,
+                        gr: cantidad => cantidad * 1.016e+6 ,
+                        mg: cantidad => cantidad * 1.016e+9,                        
+                        micg: cantidad => cantidad *1.016e+12      ,
+                        tnc: cantidad => cantidad * 1.12,
+                        st: cantidad => cantidad *160,
+                        lib: cantidad => cantidad *2240,
+                        oz: cantidad => cantidad *  35840,
+                    },
+                    tnc: {
+                        kg: cantidad => cantidad *907.2            ,
+                        tn: cantidad => cantidad / 1.102    ,
+                        gr: cantidad => cantidad * 907200 ,
+                        mg: cantidad => cantidad * 9.072e+8,                        
+                        micg: cantidad => cantidad *9.072e+11 ,
+                        tnl: cantidad => cantidad / 1.12,
+                        st: cantidad => cantidad *142.9,
+                        lib: cantidad => cantidad *2000,
+                        oz: cantidad => cantidad * 32000,
+                    },
+                    st: {
+                        kg: cantidad => cantidad *6.35,
+                        tn: cantidad => cantidad /157.5   ,
+                        gr: cantidad => cantidad *6350 ,
+                        mg: cantidad => cantidad * 6.35e+6,                        
+                        micg: cantidad => cantidad *6.35e+9  ,
+                        tnl: cantidad => cantidad / 160,
+                        tnc: cantidad => cantidad /142.9,
+                        lib: cantidad => cantidad *14,
+                        oz: cantidad => cantidad *  224,
+                    },
+                    lib: {
+                        kg: cantidad => cantidad /2.205,
+                        tn: cantidad => cantidad / 2250    ,
+                        gr: cantidad => cantidad * 453.6 ,
+                        mg: cantidad => cantidad * 453600,                        
+                        micg: cantidad => cantidad *4.536e+8         ,
+                        tnl: cantidad => cantidad / 2240,
+                        tnc: cantidad => cantidad /2000        ,
+                        st: cantidad => cantidad /14,
+                        oz: cantidad => cantidad * 16,
+                    },
+                    oz: {
+                        kg: cantidad => cantidad /35.274,
+                        tn: cantidad => cantidad / 35270   ,
+                        gr: cantidad => cantidad * 28.35 ,
+                        mg: cantidad => cantidad * 28350,                        
+                        micg: cantidad => cantidad * 2.835e+7         ,
+                        tnl: cantidad => cantidad / 35840,
+                        tnc: cantidad => cantidad /32000,
+                        st: cantidad => cantidad /224       ,
+                        lib: cantidad => cantidad /  16,
+                    },
+                   
+                   
+                };
+            
+                let unidad = document.getElementById("unidad").value;
+                let unidad2 = document.getElementById("unidad2").value;
+                let cantidad = parseFloat(document.getElementById("cantidad").value);
+                let resultado = document.getElementById("resultado");
+            
+                if (unidad in conversiones && unidad2 in conversiones[unidad]) {
+                    
+                    let resultadoConversion = conversiones[unidad][unidad2](cantidad);
+                    resultado.textContent = `${cantidad} ${unidad} son ${resultadoConversion} ${unidad2}`;
+                } else {
+                    resultado.textContent = "Por favor, selecciona una unidad válida.";
+                }
             }
+            
