@@ -58,17 +58,56 @@
 <h5 id="mensaje2">....</h5> -->
 
 <form id="conversorForm">
-    <label for="unidad">Selecciona la unidad:</label>
-    <select id="unidad" name="unidad">
-        <option id="litros" value="lt">Litres</option>
-        <option id="galon" value="gl">Galons</option>
-    </select><br>
-    <br>
-    <label for="cantidad">Cantidad:</label><br>
-    <input id="cantidad" type="number" id="cantidad" name="cantidad">
-    <br>
-    <br>
-    <button type="button" class="btn btn-warning" onclick="calcularLitros()">Calcular</button>
+  <label for="unidad">Selecciona la unidad:</label>
+  <select id="unidad" name="unidad">
+      <option id="litro" value="litro">Litros</option>
+      <option id="galon" value="galon">Galon</option>
+      <option id="cuarto" value="qtr">Cuarto estadounidense</option>
+      <option id="pinta" value="pt">Pinta estadounidense</option>
+    <option id="taza" value="taza">Taza americana</option>
+    <option id="onzaLiquida" value="onza">Onza líquida americana</option>
+    <option id="cuacharada" value="cucharada">Cucharadas estadounidense</option>
+    <option id="cucharadita" value="cucharadita">Cucharadita estadounidense</option>
+    <option id="mt cubico" value="m3">Metro cúbico</option>
+    <option id="mililitro" value="ml">Mililitro</option>
+    <option id="galonImperial" value="gal">Galón Imperial</option>
+    <option id="cuartoImperial" value="ctimperial">Cuarto Imperial</option>
+    <option id="pintaImperial" value="ptImperial">Pinta Imperial</option>
+    <option id="tazaImperial" value="tazaImperial">Taza Imperial</option>
+    <option id="onzaLiquidaImperial" value="ozLiquidaImperial">Onza Liquida Imperial</option>
+    <option id="cucharadaImperial" value="cucharadaImperial">Cucharada Imperial</option>
+    <option id="cucharaditaImperial" value="cucharaditaImperial">Cucharadita Imperial</option>
+    <option id="pieCubico" value="pie3">Pie cúbico</option>
+    <option id="pulgadaCubica" value="pulgada3">Pulgada cúbica</option>
+   
+  </select><br>
+  <br>
+  <select id="unidad2" name="unidad">
+    <option id="litro" value="litro">Litros</option>
+      <option id="galon" value="galon">Galon</option>
+      <option id="cuarto" value="qtr">Cuarto estadounidense</option>
+      <option id="pinta" value="pt">Pinta estadounidense</option>
+    <option id="taza" value="taza">Taza americana</option>
+    <option id="onzaLiquida" value="Onza">Onza líquida americana</option>
+    <option id="cuacharada" value="cucharada">Cucharadas estadounidense</option>
+    <option id="cucharadita" value="cucharadita">Cucharadita estadounidense</option>
+    <option id="mt cubico" value="m3">Metro cúbico</option>
+    <option id="mililitro" value="ml">Mililitro</option>
+    <option id="galonImperial" value="gal">Galón Imperial</option>
+    <option id="cuartoImperial" value="ctimperial">Cuarto Imperial</option>
+    <option id="pintaImperial" value="ptImperial">Pinta Imperial</option>
+    <option id="tazaImperial" value="tazaImperial">Taza Imperial</option>
+    <option id="onzaLiquidaImperial" value="ozLiquidaImperial">Onza Liquida Imperial</option>
+    <option id="cucharadaImperial" value="cucharadaImperial">Cucharada Imperial</option>
+    <option id="cucharaditaImperial" value="cucharaditaImperial">Cucharadita Imperial</option>
+    <option id="pieCubico" value="pie3">Pie cúbico</option>
+    <option id="pulgadaCubica" value="pulgada3">Pulgada cúbica</option>
+</select><br>
+  <label for="cantidad">Cantidad:</label><br>
+  <input id="cantidad" type="number" id="cantidad" name="cantidad">
+  <br>
+  <br>
+  <button type="button" class="btn btn-warning" onclick="calcularLitro()">Calcular</button>
 </form>
 <div id="resultado"></div>
 </div>

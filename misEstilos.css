@@ -74,6 +74,13 @@ body{
 }
 
 
+.bmi{
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
     
 @media screen and (max-width: 375px){
 
@@ -93,6 +100,13 @@ body{
     
 
 }
+.bmi{
+    
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    width: 90%;
+}
 
 .todo{
     text-align: center;
@@ -101,12 +115,10 @@ body{
     margin-top: 20%;
 }
 
-
+.reco{
+    font-size: x-small;
+    align-items: center;
+    width: 50%;
 }
 
-.bmi{
-    align-items: center;
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-bottom: 10%;
 }
