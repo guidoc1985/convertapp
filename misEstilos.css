@@ -81,6 +81,14 @@ body{
     margin-bottom: 10%;
 }
 
+.volume{
+    margin-left: -5%;
+    border-radius: 5px;
+}
+
+.caja{
+    border-radius: 5px;
+}
     
 @media screen and (max-width: 375px){
 
