@@ -1,5 +1,9 @@
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.querySelector('.bmi').classList.remove('hidden');
+    }, 500); // Retraso de 500ms
+});
 
 function calcular() {
     var unidad = document.getElementById("unidad").value;

@@ -53,6 +53,37 @@ body{
     border-radius: 20px;
 }
 
+
+/* Define la animación de opacidad y desplazamiento */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* Comienza fuera de la pantalla a la izquierda */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Termina en su posición original */
+    }
+}
+
+/* Aplica la animación a la clase .bmi */
+.bmi {
+    opacity: 0; /* Comienza con opacidad 0 */
+    transform: translateX(-100px); /* Comienza fuera de la pantalla a la izquierda */
+    animation: fadeInLeft 2s forwards; /* La animación dura 2 segundos */
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100px); /* Mantiene la posición fuera de la pantalla a la izquierda */
+}
+
+.bmi:not(.hidden) {
+    animation: fadeInLeft 2s forwards;
+}
+
+
 .fondoPeso{
     background-image: url(img/piedra.jpeg);
     background-size: cover;
@@ -130,3 +161,86 @@ body{
 }
 
 }
+
+
+@media screen and (max-width: 500px){
+
+    .presentacion{
+        text-align:start;
+        font-size: larger;
+        margin-left: 5%;
+        margin-top: 110%;
+    }
+    body{
+        background-image: url(img/world.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        
+        
+    
+    }
+    .bmi{
+        
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 10%;
+        width: 90%;
+    }
+    
+    .todo{
+        text-align: center;
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 20%;
+    }
+    
+    .reco{
+        font-size: x-small;
+        align-items: center;
+        width: 50%;
+    }
+    
+    }
+
+    @media screen and (max-width: 1100px){
+
+        .presentacion{
+            text-align:start;
+            font-size: larger;
+            margin-left: 5%;
+            margin-top: 110%;
+        }
+        body{
+            background-image: url(img/world.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: black;
+            
+            
+        
+        }
+        .bmi{
+            
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-bottom: 10%;
+            width: 90%;
+        }
+        
+        .todo{
+            text-align: center;
+            margin-left: 10%;
+            width: 80%;
+            margin-top: 20%;
+        }
+        
+        .reco{
+            font-size: x-small;
+            align-items: center;
+            width: 50%;
+        }
+        
+        }
