@@ -12,6 +12,41 @@ body{
     font-size: xx-large;
 }
 
+.nav-link:hover {
+    border-bottom: 3px solid #691313;
+    
+  }
+
+  .caja {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    /* Inicialmente oculta */
+    opacity: 0;
+    transform: translateX(100%);
+    /* Aplicar la animación */
+    animation: aparecer 1s forwards;
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 10%;
+    
+   
+}
+.btn {
+    margin-top: 10px;
+}
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .nav-link{
     color: aliceblue;
 }
@@ -43,7 +78,7 @@ body{
     border-radius: 20px;
 }
 
-.todo{
+/*.todo{
     text-align: center;
     margin-top: 5%;
     background-color: antiquewhite;
@@ -139,6 +174,28 @@ body{
     
 
 }
+
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    /* Inicialmente oculta */
+    opacity: 0;
+    transform: translateX(100%);
+    /* Aplicar la animación */
+    animation: aparecer 1s forwards;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    
+   
+}
+.btn {
+    margin-top: 10px;
+}
+
+
 .bmi{
     
     margin-top: 5%;
@@ -147,12 +204,7 @@ body{
     width: 90%;
 }
 
-.todo{
-    text-align: center;
-    margin-left: 10%;
-    width: 80%;
-    margin-top: 20%;
-}
+
 
 .reco{
     font-size: x-small;
@@ -189,19 +241,30 @@ body{
         width: 90%;
     }
     
-    .todo{
-        text-align: center;
-        margin-left: 10%;
-        width: 80%;
-        margin-top: 20%;
-    }
-    
+
     .reco{
         font-size: x-small;
         align-items: center;
         width: 50%;
     }
     
+    }
+
+    .card {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-top: 20px;
+        /* Inicialmente oculta */
+        opacity: 0;
+        transform: translateX(100%);
+        /* Aplicar la animación */
+        animation: aparecer 1s forwards;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 10%;
+        
+       
     }
 
     @media screen and (max-width: 1100px){
@@ -230,12 +293,7 @@ body{
             width: 90%;
         }
         
-        .todo{
-            text-align: center;
-            margin-left: 10%;
-            width: 80%;
-            margin-top: 20%;
-        }
+
         
         .reco{
             font-size: x-small;

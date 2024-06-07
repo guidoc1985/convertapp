@@ -45,17 +45,22 @@
 </header>
 <body class="fondoBmi">
     
+
+
+
         <div class="todo">
+          
           <div class="container-fluid"></div>
+          <div class="card">
 <h2>Body mass index</h2>
 
 
 <form id="conversorForm">
     <label for="unidad">Kilograms</label>
-    <input class="caja" type="number" id="kilos" name="cantidad">
+    <input class="form-control caja" type="number" id="kilos" name="cantidad">
       
     <label for="unidad">Height in meters</label>
-    <input class="caja" type="number" id="altura" name="cantidad">
+    <input class="form-control caja" type="number" id="altura" name="cantidad">
     <br>
     <br>
     <button type="button" class="btn btn-warning" onclick="calcularBmi()">Calcular</button>
@@ -63,8 +68,8 @@
 <p id="mensaje">...</p><br>
 <p id="mensaje2"></p>
 </div>
+</body>
 </div>
-
 
 <img class="bmi hidden"src="img/bmi.png" alt="imagen">
 
