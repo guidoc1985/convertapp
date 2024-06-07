@@ -31,7 +31,7 @@ body{
     transform: translateX(100%);
     /* Aplicar la animación */
     animation: aparecer 1s forwards;
-    width: 50%;
+    width: 70%;
     margin-left: 20%;
     margin-top: 10%;
     
@@ -76,7 +76,7 @@ body{
 
 .cantidad{
     border-radius: 20px;
-    width: 100%;
+    
 }
 
 /*.todo{
@@ -157,7 +157,74 @@ body{
     border-radius: 5px;
 }
     
-@media screen and (max-width: 375px){
+    
+@media screen and ( max-width: 275px){
+
+    .presentacion{
+        text-align:start;
+        font-size: larger;
+        margin-left: 5%;
+        margin-top: 110%;
+    }
+    body{
+        background-image: url(img/world.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        
+        
+    
+    }
+    
+    #cantidad{
+        border-radius: 20px;
+        width: 20px;
+        margin-left: 5px;
+        
+    }
+    
+    .card {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-top: 20px;
+        /* Inicialmente oculta */
+        opacity: 0;
+        transform: translateX(100%);
+        /* Aplicar la animación */
+        animation: aparecer 1s forwards;
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 10%;
+        
+       
+    }
+    .btn {
+        margin-top: 10px;
+    }
+    
+    
+    .bmi{
+        
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 10%;
+        width: 90%;
+    }
+    
+    
+    
+    .reco{
+        font-size: x-small;
+        align-items: center;
+        width: 50%;
+    }
+    
+    }
+
+
+@media screen and ( max-width: 375px){
 
 .presentacion{
     text-align:start;
@@ -174,6 +241,13 @@ body{
     
     
 
+}
+
+#cantidad{
+    border-radius: 5px;
+    width:100%;
+    
+    
 }
 
 .card {
