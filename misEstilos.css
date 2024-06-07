@@ -76,6 +76,7 @@ body{
 
 .cantidad{
     border-radius: 20px;
+    width: 100%;
 }
 
 /*.todo{
