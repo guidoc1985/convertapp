@@ -73,9 +73,24 @@ else if ( unidad === "mt" && unidad2 === "km"){
     resultado.textContent = cantidad + " metros son  " + mt + " Pulgadas"
 }else if ( unidad === "mt" && unidad2 === "miln"){
     let mt = cantidad / 1852
-    mt = mt.toFixed(8)
-    resultado.textContent = cantidad + " metros son  " + mt + " Millas Náuticas"
+     resultado.textContent = cantidad + " metros son  " + mt + " Millas Náuticas"
 }
+else if ( unidad === "mt" && unidad2 === "hect"){
+    let mt = cantidad / 100
+     resultado.textContent = cantidad + " metros son  " + mt + " hectómetros"
+}
+else if ( unidad === "mt" && unidad2 === "deca"){
+    let mt = cantidad / 10
+     resultado.textContent = cantidad + " metros son  " + mt + " decámetros"
+}
+else if ( unidad === "mt" && unidad2 === "deci"){
+    let mt = cantidad *10
+     resultado.textContent = cantidad + " metros son  " + mt + " decímetros"
+}
+
+
+
+
 
 else if ( unidad === "ft" && unidad2 === "cm"){
     let ft = cantidad * 30.48
@@ -102,6 +117,21 @@ else if ( unidad === "ft" && unidad2 === "cm"){
     let ft = cantidad / 6076
     resultado.textContent = cantidad + " pies son  " + ft + " Millas Náuticas"
 }
+else if ( unidad === "ft" && unidad2 === "hect"){
+    let ft = cantidad / 328.1
+    resultado.textContent = cantidad + " pies son  " + ft + " hectómetros"
+}
+else if ( unidad === "ft" && unidad2 === "deca"){
+    let ft = cantidad / 32.808
+    resultado.textContent = cantidad + " pies son  " + ft + " decámetros"
+}
+else if ( unidad === "ft" && unidad2 === "deci"){
+    let ft = cantidad *3.048
+    resultado.textContent = cantidad + " pies son  " + ft + " decímetros"
+}
+
+
+
 
 else if ( unidad === "km" && unidad2 === "cm"){
     let km = cantidad * 100000
@@ -134,6 +164,22 @@ else if ( unidad === "km" && unidad2 === "cm"){
     let km = cantidad / 1.852
     resultado.textContent = cantidad + " kilómetros son  " + km + " Millas Náuticas"
 }
+else if ( unidad === "km" && unidad2 === "hect"){
+    let km = cantidad *10
+    resultado.textContent = cantidad + " kilómetros son  " + km + " hectómetros"
+}
+else if ( unidad === "km" && unidad2 === "deca"){
+    let km = cantidad *100
+    resultado.textContent = cantidad + " kilómetros son  " + km + " decámetros"
+}
+else if ( unidad === "km" && unidad2 === "deci"){
+    let km = cantidad *10000
+    resultado.textContent = cantidad + " kilómetros son  " + km + " decímetros"
+}
+
+
+
+
 
 else if ( unidad === "cm" && unidad2 === "ft"){
     let cm = cantidad / 30.48
@@ -163,7 +209,20 @@ else if ( unidad === "cm" && unidad2 === "ft"){
     let cm = cantidad / 185200
     resultado.textContent = cantidad + " centímetros son  " + cm + " Millas Náuticas"
 }
+else if ( unidad === "cm" && unidad2 === "hect"){
+    let cm = cantidad / 10000
+    resultado.textContent = cantidad + " centímetros son  " + cm + " hectómetros"
+}
+else if ( unidad === "cm" && unidad2 === "deca"){
+    let cm = cantidad / 1000
+    resultado.textContent = cantidad + " centímetros son  " + cm + " decámetros"
+}
+else if ( unidad === "cm" && unidad2 === "deci"){
+    let cm = cantidad / 10
+    resultado.textContent = cantidad + " centímetros son  " + cm + " decímetros"
+}
 
+//aca
 
 else if ( unidad === "mm" && unidad2 === "mt"){
     let mm = cantidad / 1000
@@ -392,9 +451,146 @@ else if ( unidad === "miln" && unidad2 === "mt"){
  resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Pulgadas"
 }
 
+else if(unidad === "hect" && unidad2=== "mt"){
+    let hect = cantidad * 100;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " metros"
 
-else{
-    resultado.textContent = "Por favor, selecciona una unidad.";
+}
+else if(unidad === "hect" && unidad2=== "ft"){
+    let hect = cantidad * 328.084;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " pies"
+
+}else if(unidad === "hect" && unidad2=== "km"){
+    let hect = cantidad /10;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " kilómetros"
+
+}else if(unidad === "hect" && unidad2=== "cm"){
+    let hect = cantidad * 10000;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " centímetros"
+
+}else if(unidad === "hect" && unidad2=== "mm"){
+    let hect = cantidad * 100000;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " milímetros"
+}else if(unidad === "hect" && unidad2=== "mic"){
+    let hect = cantidad * 1e+8    ;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " micrómetros"
+}else if(unidad === "hect" && unidad2=== "nan"){
+    let hect = cantidad * 1e+11;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " nanómetros"
+}else if(unidad === "hect" && unidad2=== "mil"){
+    let hect = cantidad /16.093    ;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " millas"
+}else if(unidad === "hect" && unidad2=== "yr"){
+    let hect = cantidad *109.361   ;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " yardas"
+}else if(unidad === "hect" && unidad2=== "pul"){
+    let hect = cantidad * 3937;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " pulgadas"
+}else if(unidad === "hect" && unidad2=== "miln"){
+    let hect = cantidad /18.52;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " millas náuticas"
+}else if(unidad === "hect" && unidad2=== "deca"){
+    let hect = cantidad * 10;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " decámetros"
+}else if(unidad === "hect" && unidad2=== "deci"){
+    let hect = cantidad * 1000;
+    resultado.textContent= cantidad + " hectometros son " + hect +  " decímetros"
+}
+
+else if(unidad === "deca" && unidad2=== "mt"){
+    let deca = cantidad * 10;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " metros"
+}else if(unidad === "deca" && unidad2=== "ft"){
+    let deca = cantidad * 32.8084;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " pies"
+}else if(unidad === "deca" && unidad2=== "km"){
+    let deca = cantidad / 100;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " kilómetros"
+}else if(unidad === "deca" && unidad2=== "cm"){
+    let deca = cantidad *1000;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " centimetros"
+}else if(unidad === "deca" && unidad2=== "mm"){
+    let deca = cantidad *10000;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " milimetros"
+}else if(unidad === "deca" && unidad2=== "mic"){
+    let deca = cantidad * 1e+7    ;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " micrómetros"
+}else if(unidad === "deca" && unidad2=== "nan"){
+    let deca = cantidad * 1e+10    ;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " nanómetros"
+}else if(unidad === "deca" && unidad2=== "mil"){
+    let deca = cantidad /160.9    ;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " millas"
+}else if(unidad === "deca" && unidad2=== "yr"){
+    let deca = cantidad *10.9361    ;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " yardas"
+}else if(unidad === "deca" && unidad2=== "pul"){
+    let deca = cantidad * 393.701;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " pulgadas"
+}else if(unidad === "deca" && unidad2=== "miln"){
+    let deca = cantidad /185.2    ;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " millas náuticas"
+}else if(unidad === "deca" && unidad2=== "hect"){
+    let deca = cantidad /10   ;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " hectometros"
+}
+else if(unidad === "deca" && unidad2=== "deci"){
+    let deca = cantidad *100    ;
+    resultado.textContent= cantidad + " decámetros son " + deca +  " decímetros"
+}
+
+
+else if(unidad === "deci" && unidad2=== "mt"){
+    let deci = cantidad / 10;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " metros"
+}
+else if(unidad === "deci" && unidad2=== "ft"){
+    let deci = cantidad / 3.048;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " pies"
+}
+else if(unidad === "deci" && unidad2=== "km"){
+    let deci = cantidad / 10000;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " kilometros"
+}
+else if(unidad === "deci" && unidad2=== "cm"){
+    let deci = cantidad * 10;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " centimetros"
+}
+else if(unidad === "deci" && unidad2=== "mm"){
+    let deci = cantidad * 100;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " milimetros"
+}
+else if(unidad === "deci" && unidad2=== "mic"){
+    let deci = cantidad * 100000;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " micrometros"
+}
+else if(unidad === "deci" && unidad2=== "nan"){
+    let deci = cantidad * 1e+8;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " nanometros"
+}
+else if(unidad === "deci" && unidad2=== "mil"){
+    let deci = cantidad / 16090 ;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " millas"
+}
+else if(unidad === "deci" && unidad2=== "yr"){
+    let deci = cantidad / 9.144;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " yardas"
+}
+else if(unidad === "deci" && unidad2=== "pul"){
+    let deci = cantidad *3.937;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " pulgadas"
+}
+else if(unidad === "deci" && unidad2=== "miln"){
+    let deci = cantidad / 18520;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " millas náuticas"
+}
+else if(unidad === "deci" && unidad2=== "hect"){
+    let deci = cantidad / 1000;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " hectómetros"
+}
+else if(unidad === "deci" && unidad2=== "deca"){
+    let deci = cantidad / 100;
+    resultado.textContent= cantidad + " decímetros son " + deci +  " decametros"
 }
 
 
@@ -498,7 +694,12 @@ function calcularTemp(){
                     st: "Stones",
                     lib: "Libras",
                     oz: "onzas",
-                    kg: "Kilogramos"
+                    kg: "Kilogramos",
+                    decag: "Decagramos",
+                    decig: "Decigramos",
+                    centig: "Centigramos",
+                    hg: "Hectogramos",
+
 
                 }
 
@@ -515,8 +716,13 @@ function calcularTemp(){
                         st: cantidad => cantidad / 6.35,
                         lib: cantidad => cantidad * 2.205,
                         oz: cantidad => cantidad * 35.274,
+                        decag: cantidad => cantidad * 100,
+                        decig: cantidad => cantidad * 10000,
+                        centig: cantidad => cantidad * 100000,
+                        hg: cantidad => cantidad * 10,
                         
                     },
+                    
                     tn: {
                         kg: cantidad => cantidad *1000,
                         gr: cantidad => cantidad * 1e+6    ,
@@ -527,6 +733,10 @@ function calcularTemp(){
                         st: cantidad => cantidad *157.5,
                         lib: cantidad => cantidad * 2205,
                         oz: cantidad => cantidad *35270,
+                        decag: cantidad => cantidad * 100000,
+                        decig: cantidad => cantidad * 1e+7,
+                        centig: cantidad => cantidad * 1e+8,
+                        hg: cantidad => cantidad * 10000,
                     },
                     gr: {
                         kg: cantidad => cantidad /1000,
@@ -538,7 +748,12 @@ function calcularTemp(){
                         st: cantidad => cantidad /6350,
                         lib: cantidad => cantidad /453.6,
                         oz: cantidad => cantidad /  28.35,
+                        decag: cantidad => cantidad /10,
+                        decig: cantidad => cantidad * 10,
+                        centig: cantidad => cantidad * 100,
+                        hg: cantidad => cantidad /100,
                     },
+                    
                     mg: {
                         kg: cantidad => cantidad /1e+6 ,
                         tn: cantidad => cantidad / 1e+9    ,
@@ -549,9 +764,14 @@ function calcularTemp(){
                         st: cantidad => cantidad /6.35e+6,
                         lib: cantidad => cantidad /453600,
                         oz: cantidad => cantidad / 28350,
+                        decag: cantidad => cantidad /10000,
+                        decig: cantidad => cantidad /100,
+                        centig: cantidad => cantidad /10,
+                        hg: cantidad => cantidad /100000
+                        ,
                     },
 
-                    // aca me quedé
+                    
                     micg: {
                         kg: cantidad => cantidad /1e+9,
                         tn: cantidad => cantidad / 1e+12    ,
@@ -562,7 +782,13 @@ function calcularTemp(){
                         st: cantidad => cantidad /6.35e+9,
                         lib: cantidad => cantidad /4.536e+8,
                         oz: cantidad => cantidad /  2.835e+7,
+                        decag: cantidad => cantidad /1e+7                        ,
+                        decig: cantidad => cantidad /100000                        ,
+                        centig: cantidad => cantidad /10000,
+                        hg: cantidad => cantidad /1e+8
+                        ,
                     },
+                    
                     tnl: {
                         kg: cantidad => cantidad *1016,
                         tn: cantidad => cantidad * 1.016    ,
@@ -573,6 +799,11 @@ function calcularTemp(){
                         st: cantidad => cantidad *160,
                         lib: cantidad => cantidad *2240,
                         oz: cantidad => cantidad *  35840,
+                        decag: cantidad => cantidad *101600                        ,
+                        decig: cantidad => cantidad *1.016e+7                        ,
+                        centig: cantidad => cantidad *1.016e+8                        ,
+                        hg: cantidad => cantidad *10160
+                        ,
                     },
                     tnc: {
                         kg: cantidad => cantidad *907.2            ,
@@ -584,6 +815,11 @@ function calcularTemp(){
                         st: cantidad => cantidad *142.9,
                         lib: cantidad => cantidad *2000,
                         oz: cantidad => cantidad * 32000,
+                        decag: cantidad => cantidad *90718.5                        ,
+                        decig: cantidad => cantidad *9.072e+6                        ,
+                        centig: cantidad => cantidad *9.072e+7                        ,
+                        hg: cantidad => cantidad *9071.85
+                        ,
                     },
                     st: {
                         kg: cantidad => cantidad *6.35,
@@ -595,7 +831,13 @@ function calcularTemp(){
                         tnc: cantidad => cantidad /142.9,
                         lib: cantidad => cantidad *14,
                         oz: cantidad => cantidad *  224,
+                        decag: cantidad => cantidad *635.029                       ,
+                        decig: cantidad => cantidad *63502.9                       ,
+                        centig: cantidad => cantidad *635029,
+                        hg: cantidad => cantidad *63.5029
+                        ,
                     },
+                    
                     lib: {
                         kg: cantidad => cantidad /2.205,
                         tn: cantidad => cantidad / 2250    ,
@@ -606,6 +848,12 @@ function calcularTemp(){
                         tnc: cantidad => cantidad /2000        ,
                         st: cantidad => cantidad /14,
                         oz: cantidad => cantidad * 16,
+                        decag: cantidad => cantidad *45.3592                     ,
+                        decig: cantidad => cantidad *4535.92                     ,
+                        centig: cantidad => cantidad *45359.2,
+                        hg: cantidad => cantidad *4.536
+
+                        ,
                     },
                     oz: {
                         kg: cantidad => cantidad /35.274,
@@ -617,7 +865,78 @@ function calcularTemp(){
                         tnc: cantidad => cantidad /32000,
                         st: cantidad => cantidad /224       ,
                         lib: cantidad => cantidad /  16,
+                        decag: cantidad => cantidad *2.83495                       ,
+                        decig: cantidad => cantidad *283.495                    ,
+                        centig: cantidad => cantidad *2834.95,
+                        hg: cantidad => cantidad / 3.527
+                        ,
                     },
+
+              
+
+                    decag: {
+                        kg: cantidad => cantidad /100,
+                        tn: cantidad => cantidad / 100000  ,
+                        gr: cantidad => cantidad * 10 ,
+                        mg: cantidad => cantidad * 10000,                        
+                        micg: cantidad => cantidad * 1e+7        ,
+                        tnl: cantidad => cantidad / 101600,
+                        tnc: cantidad => cantidad /90720                        ,
+                        st: cantidad => cantidad / 635                        ,
+                        lib: cantidad => cantidad /  45.359                        ,
+                        decig: cantidad => cantidad *100                        ,
+                        centig: cantidad => cantidad *1000,
+                        hg: cantidad => cantidad / 10   
+                        ,
+                    },
+                    decig: {
+                        kg: cantidad => cantidad /10000,
+                        tn: cantidad => cantidad /1e+7                        ,
+                        gr: cantidad => cantidad /10,
+                        mg: cantidad => cantidad * 100,                        
+                        micg: cantidad => cantidad * 100000         ,
+                        tnl: cantidad => cantidad / 1.016e+7                        ,
+                        tnc: cantidad => cantidad /9.072e+6                        ,
+                        st: cantidad => cantidad / 63500                        ,
+                        lib: cantidad => cantidad /  4536                        ,
+                        decag: cantidad => cantidad /100                      ,
+                        centig: cantidad => cantidad *10,
+                        hg: cantidad => cantidad / 1000
+                        ,
+                    },
+                    centig: {
+                        kg: cantidad => cantidad /100000   ,
+                        tn: cantidad => cantidad / 1e+8                        ,
+                        gr: cantidad => cantidad /100 ,
+                        mg: cantidad => cantidad * 10,                        
+                        micg: cantidad => cantidad * 10000         ,
+                        tnl: cantidad => cantidad / 1.016e+8                        ,
+                        tnc: cantidad => cantidad /9.072e+7                        ,
+                        st: cantidad => cantidad / 635000                        ,
+                        lib: cantidad => cantidad /  45360                        ,
+                        decag: cantidad => cantidad /1000                     ,
+                        decig: cantidad => cantidad /10                   ,
+                        hg: cantidad => cantidad / 10000
+                        ,
+                    },
+
+                    
+                    hg: {
+                        kg: cantidad => cantidad /10,
+                        tn: cantidad => cantidad / 10000   ,
+                        gr: cantidad => cantidad * 100 ,
+                        mg: cantidad => cantidad * 100000,                        
+                        micg: cantidad => cantidad * 1e+8                       ,
+                        tnl: cantidad => cantidad / 10160                        ,
+                        tnc: cantidad => cantidad / 9072                        ,
+                        st: cantidad => cantidad /63.503                        ,
+                        lib: cantidad => cantidad /  4.536                        ,
+                        decag: cantidad => cantidad *10                      ,
+                        decig: cantidad => cantidad *1000                    ,
+                        centig: cantidad => cantidad /10000,
+                    
+                    },
+
                    
                    
                 };
@@ -657,12 +976,23 @@ function calcularTemp(){
                 cucharaditaImperial: "cucharaditas imperiales",
                 pie3: "pies cúbicos",
                 pulgada3: "pulgadas cúbicas",
+                decilitro: "Decilitros",
+                hectolitro: "Hectolitros",
+                kilolitro: "Kilolitros",
+                decalitro: "Decalitros",
+                centilitro: "Centilitros"
+
             };
 
             function calcularLitro() {
                 
                 const conversiones = {
                     litro: {
+                        decilitro: cantidad => cantidad *10,
+                        hectolitro: cantidad => cantidad /100,
+                        kilolitro: cantidad => cantidad /1000,
+                        decalitro: cantidad => cantidad /10,
+                        centilitro: cantidad => cantidad *100,
                         galon: cantidad => cantidad /3.785,
                         qtr: cantidad => cantidad * 1.057  ,
                         pt: cantidad => cantidad * 2.113,
@@ -683,9 +1013,145 @@ function calcularTemp(){
                         pulgada3: cantidad => cantidad * 61.024,
                         
                     },
-                     
+                    decilitro: {
+                        litro: cantidad => cantidad /10,
+                        centilitro: cantidad => cantidad *10,
+                        hectolitro: cantidad => cantidad /1000,
+                        decalitro: cantidad => cantidad /100,
+                        kilolitro: cantidad => cantidad /10000,
+                        galon: cantidad => cantidad /37.854,
+                        qtr: cantidad => cantidad /9.464  ,
+                        pt: cantidad => cantidad /4.732,
+                        taza: cantidad => cantidad * 3.381,                        
+                        onza: cantidad => cantidad *6.763,
+                        cucharada: cantidad => cantidad *6.763,
+                        cucharadita: cantidad => cantidad * 20.288,
+                        m3: cantidad => cantidad / 10000,
+                        ml: cantidad => cantidad * 100,
+                        gal: cantidad => cantidad / 45.461,
+                        ctimperial: cantidad => cantidad / 11.365,
+                        ptImperial: cantidad => cantidad /5.683,
+                        tazaImperial: cantidad => cantidad /2.841,
+                        ozLiquidaImperial: cantidad => cantidad * 3.52,
+                        cucharadaImperial: cantidad => cantidad * 5.631,
+                        cucharaditaImperial: cantidad => cantidad * 16.894 ,
+                        pie3: cantidad => cantidad / 283.2,
+                        pulgada3: cantidad => cantidad * 6.102,
+                        
+                    },
+
+                    hectolitro: {
+                        litro: cantidad => cantidad *100,
+                        centilitro: cantidad => cantidad *10000,
+                        decilitro: cantidad => cantidad *1000,
+                        decalitro: cantidad => cantidad *10,
+                        kilolitro: cantidad => cantidad /10,
+                        galon: cantidad => cantidad *26.417,
+                        qtr: cantidad => cantidad *105.7  ,
+                        pt: cantidad => cantidad *211.3,
+                        taza: cantidad => cantidad * 416.7,                        
+                        onza: cantidad => cantidad *3381.4,
+                        cucharada: cantidad => cantidad *6762.8,
+                        cucharadita: cantidad => cantidad * 20288.4,
+                        m3: cantidad => cantidad / 10,
+                        ml: cantidad => cantidad * 100000,
+                        gal: cantidad => cantidad *21.9969,
+                        ctimperial: cantidad => cantidad* 87.9877,
+                        ptImperial: cantidad => cantidad *175.975,
+                        tazaImperial: cantidad => cantidad *351.951,
+                        ozLiquidaImperial: cantidad => cantidad * 3519.51,
+                        cucharadaImperial: cantidad => cantidad * 5631.21,
+                        cucharaditaImperial: cantidad => cantidad * 16893.6 ,
+                        pie3: cantidad => cantidad *3.531,
+                        pulgada3: cantidad => cantidad * 6102.37,
+                        
+                    },
+                    
+                    kilolitro: {
+                        litro: cantidad => cantidad *1000,
+                        centilitro: cantidad => cantidad *100000,
+                        decilitro: cantidad => cantidad *10000,
+                        decalitro: cantidad => cantidad *100,
+                        hectolitro: cantidad => cantidad *10,
+                        galon: cantidad => cantidad *264.172,
+                        qtr: cantidad => cantidad *1056.69  ,
+                        pt: cantidad => cantidad *2113.38,
+                        taza: cantidad => cantidad * 4166.67,                        
+                        onza: cantidad => cantidad *33814,
+                        cucharada: cantidad => cantidad *67628,
+                        cucharadita: cantidad => cantidad * 202884,
+                        m3: cantidad => cantidad *1 ,
+                        ml: cantidad => cantidad * 1e+6,
+                        gal: cantidad => cantidad *219.969,
+                        ctimperial: cantidad => cantidad* 879.877,
+                        ptImperial: cantidad => cantidad *1759.75,
+                        tazaImperial: cantidad => cantidad *3519.51,
+                        ozLiquidaImperial: cantidad => cantidad * 35195.1,
+                        cucharadaImperial: cantidad => cantidad * 56312.1,
+                        cucharaditaImperial: cantidad => cantidad * 168936 ,
+                        pie3: cantidad => cantidad *35.3147,
+                        pulgada3: cantidad => cantidad * 61023.7,
+                        
+                    },
+                    
+                     decalitro: {
+                        litro: cantidad => cantidad *10,
+                        centilitro: cantidad => cantidad *1000,
+                        decilitro: cantidad => cantidad *100,
+                        kilolitro: cantidad => cantidad /100,
+                        hectolitro: cantidad => cantidad /10,
+                        galon: cantidad => cantidad *2.64172,
+                        qtr: cantidad => cantidad *10.5669  ,
+                        pt: cantidad => cantidad *21.1338,
+                        taza: cantidad => cantidad * 41.6667,                        
+                        onza: cantidad => cantidad *338.14,
+                        cucharada: cantidad => cantidad *676.28,
+                        cucharadita: cantidad => cantidad * 2028.84,
+                        m3: cantidad => cantidad /100 ,
+                        ml: cantidad => cantidad * 10000,
+                        gal: cantidad => cantidad *2.19969,
+                        ctimperial: cantidad => cantidad* 8.79877,
+                        ptImperial: cantidad => cantidad *17.5975,
+                        tazaImperial: cantidad => cantidad *35.1951,
+                        ozLiquidaImperial: cantidad => cantidad * 351.951,
+                        cucharadaImperial: cantidad => cantidad * 563.121,
+                        cucharaditaImperial: cantidad => cantidad * 1689.36 ,
+                        pie3: cantidad => cantidad /2.832,
+                        pulgada3: cantidad => cantidad * 610.237,
+                     },
+                       
+                     centilitro: {
+                        litro: cantidad => cantidad /100,
+                        decalitro: cantidad => cantidad /1000,
+                        decilitro: cantidad => cantidad /10,
+                        kilolitro: cantidad => cantidad /100000,
+                        hectolitro: cantidad => cantidad /10000,
+                        galon: cantidad => cantidad / 378.5                        ,
+                        qtr: cantidad => cantidad /94.635                        ,
+                        pt: cantidad => cantidad /47.318,
+                        taza: cantidad => cantidad /24,                        
+                        onza: cantidad => cantidad /2.957                        ,
+                        cucharada: cantidad => cantidad /1.479                        ,
+                        cucharadita: cantidad => cantidad * 2.02884,
+                        m3: cantidad => cantidad /100000 ,
+                        ml: cantidad => cantidad * 10,
+                        gal: cantidad => cantidad /454.6,
+                        ctimperial: cantidad => cantidad/113.7                        ,
+                        ptImperial: cantidad => cantidad /56.826,
+                        tazaImperial: cantidad => cantidad /28.413                        ,
+                        ozLiquidaImperial: cantidad => cantidad /2.841,
+                        cucharadaImperial: cantidad => cantidad /1.776                        ,
+                        cucharaditaImperial: cantidad => cantidad * 1.68936 ,
+                        pie3: cantidad => cantidad /2832,
+                        pulgada3: cantidad => cantidad /1.639                        ,
+                     },
                     galon: {
                         litro: cantidad => cantidad *3.785,
+                        decilitro: cantidad => cantidad *37.854,
+                        hectolitro: cantidad => cantidad /26.417,
+                        kilolitro: cantidad => cantidad /264.2,
+                        decalitro: cantidad => cantidad /2.642,
+                        centilitro: cantidad => cantidad *378.5                        ,
                         qtr: cantidad => cantidad * 4,
                         pt: cantidad => cantidad*8,
                         taza: cantidad => cantidad * 15.773,                        
@@ -709,6 +1175,11 @@ function calcularTemp(){
                     
                     qtr: {
                         litro: cantidad => cantidad /1.057,
+                        decilitro: cantidad => cantidad *9.464,
+                        hectolitro: cantidad => cantidad /105.7,
+                        kilolitro: cantidad => cantidad /1057,
+                        decalitro: cantidad => cantidad /10.567,
+                        centilitro: cantidad => cantidad *94.635 ,
                         galon: cantidad => cantidad /4,
                         pt: cantidad => cantidad * 2,
                         taza: cantidad => cantidad * 3.943,                        
@@ -730,6 +1201,11 @@ function calcularTemp(){
                     },
                     pt: {
                         litro: cantidad => cantidad /2.113,
+                        decilitro: cantidad => cantidad *4.732,
+                        hectolitro: cantidad => cantidad /211.3,
+                        kilolitro: cantidad => cantidad /2113,
+                        decalitro: cantidad => cantidad /21.134,
+                        centilitro: cantidad => cantidad *47.3176 ,
                         galon: cantidad => cantidad /8,
                         qtr: cantidad => cantidad /2,
                         taza: cantidad => cantidad * 1.972,                        
@@ -753,6 +1229,11 @@ function calcularTemp(){
                   
                     taza: {
                         litro: cantidad => cantidad / 4.167,
+                        decilitro: cantidad => cantidad *2.36588,
+                        hectolitro: cantidad => cantidad /422.7,
+                        kilolitro: cantidad => cantidad /4227,
+                        decalitro: cantidad => cantidad /42.268,
+                        centilitro: cantidad => cantidad *23.6588 ,
                         galon: cantidad => cantidad /15.772,
                         qtr: cantidad => cantidad /  3.943,
                         pt: cantidad => cantidad / 1.972 ,                       
@@ -776,6 +1257,11 @@ function calcularTemp(){
                     
                     onza: {
                         litro: cantidad => cantidad /33.814,
+                        decilitro: cantidad => cantidad /3.381,
+                        hectolitro: cantidad => cantidad /3381,
+                        kilolitro: cantidad => cantidad /33810,
+                        decalitro: cantidad => cantidad /338.1,
+                        centilitro: cantidad => cantidad *2.95735,
                         galon: cantidad => cantidad /128,
                         qtr: cantidad => cantidad /32,
                         pt: cantidad => cantidad /16,
@@ -795,9 +1281,16 @@ function calcularTemp(){
                         pulgada3: cantidad => cantidad * 1.805,
                         
                     },
+
+                 
                     
                     cucharada: {
                         litro: cantidad => cantidad /67.628,
+                        decilitro: cantidad => cantidad /6.763,
+                        hectolitro: cantidad => cantidad /6763,
+                        kilolitro: cantidad => cantidad /67630,
+                        decalitro: cantidad => cantidad /676.3,
+                        centilitro: cantidad => cantidad *1.47868,
                         galon: cantidad => cantidad /256,
                         qtr: cantidad => cantidad /64,
                         pt: cantidad => cantidad /32,
@@ -820,6 +1313,11 @@ function calcularTemp(){
                     
                     cucharadita: {
                         litro: cantidad => cantidad /202.9,
+                        decilitro: cantidad => cantidad /20.288,
+                        hectolitro: cantidad => cantidad /20290,
+                        kilolitro: cantidad => cantidad /202900,
+                        decalitro: cantidad => cantidad /2029,
+                        centilitro: cantidad => cantidad /2.029,
                         galon: cantidad => cantidad /768,
                         qtr: cantidad => cantidad /192,
                         pt: cantidad => cantidad /96,
@@ -839,8 +1337,14 @@ function calcularTemp(){
                         pulgada3: cantidad => cantidad /3.325,
                         
                     },
+                       
                     m3: {
                         litro: cantidad => cantidad *1000,
+                        decilitro: cantidad => cantidad *10000,
+                        hectolitro: cantidad => cantidad *10,
+                        kilolitro: cantidad => cantidad *1,
+                        decalitro: cantidad => cantidad *100,
+                        centilitro: cantidad => cantidad *100000,
                         galon: cantidad => cantidad *264.2,
                         qtr: cantidad => cantidad * 1057,
                         pt: cantidad => cantidad * 2113,
@@ -863,6 +1367,11 @@ function calcularTemp(){
                     
                     gal: {
                         litro: cantidad => cantidad * 4.546  ,
+                        decilitro: cantidad => cantidad *45.4609   ,
+                        hectolitro: cantidad => cantidad /21.997,
+                        kilolitro: cantidad => cantidad /220,
+                        decalitro: cantidad => cantidad * 4.54609 * 0.1,
+                        centilitro: cantidad => cantidad *454.609,
                         galon: cantidad => cantidad * 1.201  ,
                         qtr: cantidad => cantidad * 4.804,
                         pt: cantidad => cantidad * 9.608,
@@ -885,6 +1394,11 @@ function calcularTemp(){
                     
                     ctimperial: {
                         litro: cantidad => cantidad * 1.137 ,
+                        decilitro: cantidad => cantidad *11.3652,
+                        hectolitro: cantidad => cantidad /87.988,
+                        kilolitro: cantidad => cantidad /879.9,
+                        decalitro: cantidad => cantidad /8.799,
+                        centilitro: cantidad => cantidad *113.652,
                         galon: cantidad => cantidad /3.331                        ,
                         qtr: cantidad => cantidad * 1.201,
                         pt: cantidad => cantidad * 2.402,
@@ -909,6 +1423,11 @@ function calcularTemp(){
                     
                     ptimperial: {
                         litro: cantidad => cantidad /1.76                        ,
+                        decilitro: cantidad => cantidad *5.68261,
+                        hectolitro: cantidad => cantidad /176,
+                        kilolitro: cantidad => cantidad /1760,
+                        decalitro: cantidad => cantidad /17.598,
+                        centilitro: cantidad => cantidad *56.8261,
                         galon: cantidad => cantidad /6.661,
                         qtr: cantidad => cantidad /1.665,
                         pt: cantidad => cantidad * 1.201,
@@ -932,6 +1451,11 @@ function calcularTemp(){
                     
                     tazaImperial: {
                         litro: cantidad => cantidad /3.52,
+                        decilitro: cantidad => cantidad *2.84131,
+                        hectolitro: cantidad => cantidad /352,
+                        kilolitro: cantidad => cantidad /3520,
+                        decalitro: cantidad => cantidad /35.195,
+                        centilitro: cantidad => cantidad *28.4131,
                         galon: cantidad => cantidad /13.323,
                         qtr: cantidad => cantidad /3.331,
                         pt: cantidad => cantidad /1.665,
@@ -955,6 +1479,11 @@ function calcularTemp(){
                     
                     ozLiquidaImperial: {
                         litro: cantidad => cantidad /35.195,
+                        decilitro: cantidad => cantidad /3.52,
+                        hectolitro: cantidad => cantidad /3520,
+                        kilolitro: cantidad => cantidad /35200,
+                        decalitro: cantidad => cantidad /352,
+                        centilitro: cantidad => cantidad *2.84131,
                         galon: cantidad => cantidad /133.2,
                         qtr: cantidad => cantidad /33.307,
                         pt: cantidad => cantidad /16.654,
@@ -978,6 +1507,11 @@ function calcularTemp(){
                     
                     cucharadaImperial: {
                         litro: cantidad => cantidad /56.312,
+                        decilitro: cantidad => cantidad /5.631,
+                        hectolitro: cantidad => cantidad /5631,
+                        kilolitro: cantidad => cantidad /56310                        ,
+                        decalitro: cantidad => cantidad /563.1,
+                        centilitro: cantidad => cantidad *1.77582                        ,
                         galon: cantidad => cantidad /213.2,
                         qtr: cantidad => cantidad /53.291,
                         pt: cantidad => cantidad /26.646,
@@ -1001,6 +1535,11 @@ function calcularTemp(){
                     
                     cucharaditaImperial: {
                         litro: cantidad => cantidad /168.9,
+                        decilitro: cantidad => cantidad /16.894,
+                        hectolitro: cantidad => cantidad /16890,
+                        kilolitro: cantidad => cantidad /168900                       ,
+                        decalitro: cantidad => cantidad /1689,
+                        centilitro: cantidad => cantidad /1.689                      ,
                         galon: cantidad => cantidad /639.5,
                         qtr: cantidad => cantidad / 159.9  ,
                         pt: cantidad => cantidad /79.937,
@@ -1024,6 +1563,11 @@ function calcularTemp(){
                   
                     pie3: {
                         litro: cantidad => cantidad *28.317,
+                        decilitro: cantidad => cantidad *283.168,
+                        hectolitro: cantidad => cantidad /3.532                        ,
+                        kilolitro: cantidad => cantidad /35.315                      ,
+                        decalitro: cantidad => cantidad *2.83168                      ,
+                        centilitro: cantidad => cantidad *2831.68                 ,
                         galon: cantidad => cantidad *7.48,
                         qtr: cantidad => cantidad * 29.922,
                         pt: cantidad => cantidad * 59.844,
@@ -1047,6 +1591,11 @@ function calcularTemp(){
                       
                     pulgada3: {
                         litro: cantidad => cantidad /61.024,
+                        decilitro: cantidad => cantidad /6.102                        ,
+                        hectolitro: cantidad => cantidad /6102                        ,
+                        kilolitro: cantidad => cantidad /61020                      ,
+                        decalitro: cantidad => cantidad /610.2                        ,
+                        centilitro: cantidad => cantidad *1.63871               ,
                         galon: cantidad => cantidad /231,
                         qtr: cantidad => cantidad /57.75,
                         pt: cantidad => cantidad /28.875,
@@ -1070,15 +1619,17 @@ function calcularTemp(){
          
                    
                 };
-            
+        
+
                 let unidad = document.getElementById("unidad").value;
                 let unidad2 = document.getElementById("unidad2").value;
                 let cantidad = parseFloat(document.getElementById("cantidad").value);
                 let resultado = document.getElementById("resultado");
-            
+                let resultadoConversion = conversiones[unidad][unidad2](cantidad);
+                
                 if (unidad in conversiones && unidad2 in conversiones[unidad]) {
                     
-                    let resultadoConversion = conversiones[unidad][unidad2](cantidad);
+                    
                     resultado.textContent = `${cantidad} ${nombresUnidades[unidad]} son ${resultadoConversion} ${nombresUnidades[unidad2]}`;
                 } else {
                     resultado.textContent = "Por favor, selecciona una unidad válida.";
