@@ -253,8 +253,20 @@ else if ( unidad === "mm" && unidad2 === "mic"){
     let mm = cantidad / 25.4
     resultado.textContent = cantidad + " milímetros  son  " + mm + " Pulgadas"
 }else if ( unidad === "mm" && unidad2 === "miln"){
-    let mm = cantidad / 1851999.3258722
-    resultado.textContent = cantidad + " milímetros  son  " + mm + " Metros"
+    let mm = cantidad / 1.852e+6
+    resultado.textContent = cantidad + " milímetros  son  " + mm + " Millas Nauticas"
+}
+else if ( unidad === "mm" && unidad2 === "hect"){
+    let mm = cantidad / 100000
+    resultado.textContent = cantidad + " milímetros son  " + mm + " hectómetros"
+}
+else if ( unidad === "mm" && unidad2 === "deca"){
+    let mm = cantidad / 10000
+    resultado.textContent = cantidad + " milímetros son  " + mm + " decámetros"
+}
+else if ( unidad === "mm" && unidad2 === "deci"){
+    let mm = cantidad / 100
+    resultado.textContent = cantidad + " milímetros son  " + mm + " decímetros"
 }
 
 
@@ -285,6 +297,22 @@ else if ( unidad === "mic" && unidad2 === "mt"){
 }else if ( unidad === "mic" && unidad2 === "pul"){
     let mic = cantidad / 25400
     resultado.textContent = cantidad + " micrómetro  son  " + mic + " Pulgadas"
+}
+else if ( unidad === "mic" && unidad2 === "miln"){
+    let mic = cantidad / 1.852e+9
+    resultado.textContent = cantidad + " micrómetros  son  " + mic + " Millas Nauticas"
+}
+else if ( unidad === "mic" && unidad2 === "hect"){
+    let mic = cantidad / 1e+8
+    resultado.textContent = cantidad + " micrómetros son  " + mic + " hectómetros"
+}
+else if ( unidad === "mic" && unidad2 === "deca"){
+    let mic = cantidad / 1e+7
+    resultado.textContent = cantidad + " micrómetros son  " + mic + " decámetros"
+}
+else if ( unidad === "mic" && unidad2 === "deci"){
+    let mic = cantidad / 100000
+    resultado.textContent = cantidad + " micrómetros son  " + mic + " decímetros"
 }
 
 
@@ -319,6 +347,21 @@ resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Pulgadas"
     let nan = cantidad / 1.852e+12
  resultado.textContent = cantidad + " Nanómetros  son  " + nan + " Millas Náuticas"
 }
+else if ( unidad === "nan" && unidad2 === "hect"){
+    let nan = cantidad / 1e+11
+    resultado.textContent = cantidad + " nanómetros son  " + nan + " hectómetros"
+}
+else if ( unidad === "nan" && unidad2 === "deca"){
+    let nan = cantidad / 1e+10
+    resultado.textContent = cantidad + " nanómetros son  " + nan + " decámetros"
+}
+else if ( unidad === "nan" && unidad2 === "deci"){
+    let nan = cantidad / 1e+8
+    resultado.textContent = cantidad + " nanómetros son  " + nan + " decímetros"
+}
+
+
+
 
 else if ( unidad === "mil" && unidad2 === "mt"){
     let mil = cantidad * 1609
@@ -351,6 +394,19 @@ else if ( unidad === "mil" && unidad2 === "mt"){
     let mil = cantidad /1.151
  resultado.textContent = cantidad + " Millas  son  " + mil + " Millas Náuticas"
 }
+else if ( unidad === "mil" && unidad2 === "hect"){
+    let mil = cantidad *16.093
+    resultado.textContent = cantidad + " millas son  " + mil + " hectómetros"
+}
+else if ( unidad === "mil" && unidad2 === "deca"){
+    let mil = cantidad *160.9
+    resultado.textContent = cantidad + " millas son  " + mil + " decámetros"
+}
+else if ( unidad === "mil" && unidad2 === "deci"){
+    let mil = cantidad *16090
+    resultado.textContent = cantidad + " millas son  " + mil + " decímetros"
+}
+
 
 
 else if ( unidad === "yr" && unidad2 === "mt"){
@@ -383,6 +439,18 @@ else if ( unidad === "yr" && unidad2 === "mt"){
 }else if ( unidad === "yr" && unidad2 === "miln"){
     let yr = cantidad / 2025
  resultado.textContent = cantidad + " Yardas  son  " + yr + " Millas Náuticas"
+}
+else if ( unidad === "yr" && unidad2 === "hect"){
+    let yr = cantidad /109.4
+    resultado.textContent = cantidad + " yardas son  " + yr + " hectómetros"
+}
+else if ( unidad === "yr" && unidad2 === "deca"){
+    let yr = cantidad /10.936
+    resultado.textContent = cantidad + " yardas son  " + yr + " decámetros"
+}
+else if ( unidad === "yr" && unidad2 === "deci"){
+    let yr = cantidad * 9.144
+    resultado.textContent = cantidad + " yardas son  " + yr + " decímetros"
 }
 
 
@@ -418,6 +486,18 @@ else if ( unidad === "pul" && unidad2 === "mt"){
     let pul = cantidad / 72910
  resultado.textContent = cantidad + " Pulgadas  son  " + pul + " Millas Náuticas"
 }
+else if ( unidad === "pul" && unidad2 === "hect"){
+    let pul = cantidad /3937
+    resultado.textContent = cantidad + " pulgadas son  " + pul + " hectómetros"
+}
+else if ( unidad === "pul" && unidad2 === "deca"){
+    let pul = cantidad /393.7
+    resultado.textContent = cantidad + " pulgadas son  " + pul + " decámetros"
+}
+else if ( unidad === "pul" && unidad2 === "deci"){
+    let pul = cantidad /3.937
+    resultado.textContent = cantidad + " pulgadas son  " + pul + " decímetros"
+}
 
 else if ( unidad === "miln" && unidad2 === "mt"){
     let miln = cantidad *1852
@@ -450,6 +530,22 @@ else if ( unidad === "miln" && unidad2 === "mt"){
     let miln = cantidad *72910
  resultado.textContent = cantidad + " Millas Náuticas  son  " + miln + " Pulgadas"
 }
+else if ( unidad === "miln" && unidad2 === "hect"){
+    let miln = cantidad *18.52
+    resultado.textContent = cantidad + " Millas náuticas son  " + miln + " hectómetros"
+}
+else if ( unidad === "miln" && unidad2 === "deca"){
+    let miln = cantidad *185.2
+    resultado.textContent = cantidad + " Millas náuticas son  " + miln + " decámetros"
+}
+else if ( unidad === "miln" && unidad2 === "deci"){
+    let miln = cantidad*18520
+    resultado.textContent = cantidad + " Millas Náuticas son  " + miln + " decímetros"
+}
+
+
+
+
 
 else if(unidad === "hect" && unidad2=== "mt"){
     let hect = cantidad * 100;
@@ -593,6 +689,50 @@ else if(unidad === "deci" && unidad2=== "deca"){
     resultado.textContent= cantidad + " decímetros son " + deci +  " decametros"
 }
 
+else if (unidad === "mt" && unidad2 === "mt"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "ft" && unidad2 === "ft"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "km" && unidad2 === "km"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "cm" && unidad2 === "cm"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "mm" && unidad2 === "mm"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "mic" && unidad2 === "mic"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "nan" && unidad2 === "nan"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "mil" && unidad2 === "mil"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "yr" && unidad2 === "yr"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "pul" && unidad2 === "pul"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "miln" && unidad2 === "miln"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "hect" && unidad2 === "hect"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "deca" && unidad2 === "deca"){
+    resultado.textContent= "elige una opción válida"
+}
+else if (unidad === "deci" && unidad2 === "deci"){
+    resultado.textContent= "elige una opción válida"
+}
+
+
 
 
 }
@@ -666,7 +806,9 @@ function calcularTemp(){
 
                let resultado = kilos / Math.pow(altura,2);
 
-                mensaje.textContent = (" your BMI is " + resultado);
+               let redondeado = resultado.toFixed(2)
+
+                mensaje.textContent = (" Tu IMC es:  " + redondeado);
 
                 if ( resultado < 18.5){
                     mensaje2.textContent = ("Tu imc es bajo peso")
@@ -886,8 +1028,9 @@ function calcularTemp(){
                         lib: cantidad => cantidad /  45.359                        ,
                         decig: cantidad => cantidad *100                        ,
                         centig: cantidad => cantidad *1000,
-                        hg: cantidad => cantidad / 10   
-                        ,
+                        hg: cantidad => cantidad / 10  , 
+                        oz: cantidad => cantidad /2.835                        ,
+                        
                     },
                     decig: {
                         kg: cantidad => cantidad /10000,
@@ -901,7 +1044,8 @@ function calcularTemp(){
                         lib: cantidad => cantidad /  4536                        ,
                         decag: cantidad => cantidad /100                      ,
                         centig: cantidad => cantidad *10,
-                        hg: cantidad => cantidad / 1000
+                        hg: cantidad => cantidad / 1000,
+                        oz: cantidad => cantidad /283.5
                         ,
                     },
                     centig: {
@@ -918,6 +1062,7 @@ function calcularTemp(){
                         decig: cantidad => cantidad /10                   ,
                         hg: cantidad => cantidad / 10000
                         ,
+                        oz: cantidad => cantidad /2835                        ,
                     },
 
                     
@@ -934,6 +1079,7 @@ function calcularTemp(){
                         decag: cantidad => cantidad *10                      ,
                         decig: cantidad => cantidad *1000                    ,
                         centig: cantidad => cantidad /10000,
+                        oz: cantidad => cantidad * 3.527                        ,
                     
                     },
 
@@ -963,13 +1109,13 @@ function calcularTemp(){
                 pt: "pintas",
                 taza: "tazas",
                 onza: "onzas",
-                cucharada: "cucharadas",
-                cucharadita: "cucharaditas",
+                cucharada: "cucharadas estadounidenses",
+                cucharadita: "cucharaditas estadounidenses",
                 m3: "metros cúbicos",
                 ml: "mililitros",
                 gal: "galones imperiales",
                 ctimperial: "cuartos imperiales",
-                ptImperial: "pintas imperiales",
+                ptimperial: "pintas imperiales",
                 tazaImperial: "tazas imperiales",
                 ozLiquidaImperial: "onzas líquidas imperiales",
                 cucharadaImperial: "cucharadas imperiales",
@@ -1004,7 +1150,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 1000,
                         gal: cantidad => cantidad / 4.546,
                         ctimperial: cantidad => cantidad / 1.136,
-                        ptImperial: cantidad => cantidad * 1.76,
+                        ptimperial: cantidad => cantidad * 1.76,
                         tazaImperial: cantidad => cantidad * 3.52,
                         ozLiquidaImperial: cantidad => cantidad * 35.195,
                         cucharadaImperial: cantidad => cantidad * 56.312,
@@ -1022,15 +1168,15 @@ function calcularTemp(){
                         galon: cantidad => cantidad /37.854,
                         qtr: cantidad => cantidad /9.464  ,
                         pt: cantidad => cantidad /4.732,
-                        taza: cantidad => cantidad * 3.381,                        
-                        onza: cantidad => cantidad *6.763,
+                        taza: cantidad => cantidad /2.4,                        
+                        onza: cantidad => cantidad *3.381,
                         cucharada: cantidad => cantidad *6.763,
                         cucharadita: cantidad => cantidad * 20.288,
                         m3: cantidad => cantidad / 10000,
                         ml: cantidad => cantidad * 100,
                         gal: cantidad => cantidad / 45.461,
                         ctimperial: cantidad => cantidad / 11.365,
-                        ptImperial: cantidad => cantidad /5.683,
+                        ptimperial: cantidad => cantidad /5.683,
                         tazaImperial: cantidad => cantidad /2.841,
                         ozLiquidaImperial: cantidad => cantidad * 3.52,
                         cucharadaImperial: cantidad => cantidad * 5.631,
@@ -1057,7 +1203,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 100000,
                         gal: cantidad => cantidad *21.9969,
                         ctimperial: cantidad => cantidad* 87.9877,
-                        ptImperial: cantidad => cantidad *175.975,
+                        ptimperial: cantidad => cantidad *175.975,
                         tazaImperial: cantidad => cantidad *351.951,
                         ozLiquidaImperial: cantidad => cantidad * 3519.51,
                         cucharadaImperial: cantidad => cantidad * 5631.21,
@@ -1084,7 +1230,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 1e+6,
                         gal: cantidad => cantidad *219.969,
                         ctimperial: cantidad => cantidad* 879.877,
-                        ptImperial: cantidad => cantidad *1759.75,
+                        ptimperial: cantidad => cantidad *1759.75,
                         tazaImperial: cantidad => cantidad *3519.51,
                         ozLiquidaImperial: cantidad => cantidad * 35195.1,
                         cucharadaImperial: cantidad => cantidad * 56312.1,
@@ -1111,7 +1257,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 10000,
                         gal: cantidad => cantidad *2.19969,
                         ctimperial: cantidad => cantidad* 8.79877,
-                        ptImperial: cantidad => cantidad *17.5975,
+                        ptimperial: cantidad => cantidad *17.5975,
                         tazaImperial: cantidad => cantidad *35.1951,
                         ozLiquidaImperial: cantidad => cantidad * 351.951,
                         cucharadaImperial: cantidad => cantidad * 563.121,
@@ -1137,7 +1283,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 10,
                         gal: cantidad => cantidad /454.6,
                         ctimperial: cantidad => cantidad/113.7                        ,
-                        ptImperial: cantidad => cantidad /56.826,
+                        ptimperial: cantidad => cantidad /56.826,
                         tazaImperial: cantidad => cantidad /28.413                        ,
                         ozLiquidaImperial: cantidad => cantidad /2.841,
                         cucharadaImperial: cantidad => cantidad /1.776                        ,
@@ -1162,7 +1308,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 3785,
                         gal: cantidad => cantidad / 1.201 ,
                         ctimperial: cantidad => cantidad * 3.331,
-                        ptImperial: cantidad => cantidad * 6.661,
+                        ptimperial: cantidad => cantidad * 6.661,
                         tazaImperial: cantidad => cantidad * 13.323,
                         ozLiquidaImperial: cantidad => cantidad * 133.2,
                         cucharadaImperial: cantidad => cantidad * 213.2,
@@ -1190,7 +1336,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 946.4 ,
                         gal: cantidad => cantidad / 4.804,
                         ctimperial: cantidad => cantidad /1.201,
-                        ptImperial: cantidad => cantidad * 1.665,
+                        ptimperial: cantidad => cantidad * 1.665,
                         tazaImperial: cantidad => cantidad * 3.331,
                         ozLiquidaImperial: cantidad => cantidad * 33.307,
                         cucharadaImperial: cantidad => cantidad * 53.291,
@@ -1216,7 +1362,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 473.2 ,
                         gal: cantidad => cantidad /9.608 ,
                         ctimperial: cantidad => cantidad / 2.402,
-                        ptImperial: cantidad => cantidad /1.201,
+                        ptimperial: cantidad => cantidad /1.201,
                         tazaImperial: cantidad => cantidad * 1.665,
                         ozLiquidaImperial: cantidad => cantidad * 16.653,
                         cucharadaImperial: cantidad => cantidad * 26.646                        ,
@@ -1237,20 +1383,20 @@ function calcularTemp(){
                         galon: cantidad => cantidad /15.772,
                         qtr: cantidad => cantidad /  3.943,
                         pt: cantidad => cantidad / 1.972 ,                       
-                        onza: cantidad => cantidad * 8.115  ,
-                        cucharada: cantidad => cantidad *16.231,
-                        cucharadita: cantidad => cantidad * 48.692 ,
+                        onza: cantidad => cantidad * 8 ,
+                        cucharada: cantidad => cantidad *16,
+                        cucharadita: cantidad => cantidad * 48 ,
                         m3: cantidad => cantidad / 4167,
                         ml: cantidad => cantidad * 240,
                         gal: cantidad => cantidad / 18.942,
                         ctimperial: cantidad => cantidad / 4.736  ,
-                        ptImperial: cantidad => cantidad / 2.368,
+                        ptimperial: cantidad => cantidad / 2.368,
                         tazaImperial: cantidad => cantidad / 1.184,
                         ozLiquidaImperial: cantidad => cantidad * 8.447 ,
-                        cucharadaImperial: cantidad => cantidad * 13.515,
-                        cucharaditaImperial: cantidad => cantidad * 40.545,
+                        cucharadaImperial: cantidad => cantidad * 13.323                        ,
+                        cucharaditaImperial: cantidad => cantidad * 39.968                        ,
                         pie3: cantidad => cantidad / 118,
-                        pulgada3: cantidad => cantidad *  14.646 ,
+                        pulgada3: cantidad => cantidad *  14.438                        ,
                         
                     },
 
@@ -1272,7 +1418,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 29.574                        ,
                         gal: cantidad => cantidad /153.7,
                         ctimperial: cantidad => cantidad /38.43,
-                        ptImperial: cantidad => cantidad /19.215,
+                        ptimperial: cantidad => cantidad /19.215,
                         tazaImperial: cantidad => cantidad /9.608,
                         ozLiquidaImperial: cantidad => cantidad * 1.041,
                         cucharadaImperial: cantidad => cantidad * 1.665,
@@ -1301,7 +1447,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 14.787,
                         gal: cantidad => cantidad /307.4,
                         ctimperial: cantidad => cantidad /76.861,
-                        ptImperial: cantidad => cantidad / 38.43,
+                        ptimperial: cantidad => cantidad / 38.43,
                         tazaImperial: cantidad => cantidad /19.215,
                         ozLiquidaImperial: cantidad => cantidad /1.922,
                         cucharadaImperial: cantidad => cantidad /1.201,
@@ -1328,7 +1474,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 4.929,
                         gal: cantidad => cantidad /922.3,
                         ctimperial: cantidad => cantidad /230.6,
-                        ptImperial: cantidad => cantidad /115.3,
+                        ptimperial: cantidad => cantidad /115.3,
                         tazaImperial: cantidad => cantidad /57.646,
                         ozLiquidaImperial: cantidad => cantidad /5.765,
                         cucharadaImperial: cantidad => cantidad /3.603,
@@ -1351,11 +1497,11 @@ function calcularTemp(){
                         taza: cantidad => cantidad * 4167,                        
                         onza: cantidad => cantidad * 33810  ,
                         cucharada: cantidad => cantidad * 67630,
-                        cucharadita: cantidad => cantidad *2029,
+                        cucharadita: cantidad => cantidad * 202900   ,
                         ml: cantidad => cantidad * 1e+6,
                         gal: cantidad => cantidad * 220,
                         ctimperial: cantidad => cantidad * 880,
-                        ptImperial: cantidad => cantidad * 1759.75,
+                        ptimperial: cantidad => cantidad * 1759.75,
                         tazaImperial: cantidad => cantidad *3520,
                         ozLiquidaImperial: cantidad => cantidad * 35200,
                         cucharadaImperial: cantidad => cantidad * 56310,
@@ -1382,9 +1528,9 @@ function calcularTemp(){
                         m3: cantidad => cantidad /220,
                         ml: cantidad => cantidad * 4546,
                         ctimperial: cantidad => cantidad * 4,
-                        ptImperial: cantidad => cantidad * 8,
+                        ptimperial: cantidad => cantidad * 8,
                         tazaImperial: cantidad => cantidad * 16,
-                        ozLiquidaImperial: cantidad => cantidad * 16,
+                        ozLiquidaImperial: cantidad => cantidad * 160,
                         cucharadaImperial: cantidad => cantidad * 256,
                         cucharaditaImperial: cantidad => cantidad * 768,
                         pie3: cantidad => cantidad /6.229,
@@ -1399,7 +1545,7 @@ function calcularTemp(){
                         kilolitro: cantidad => cantidad /879.9,
                         decalitro: cantidad => cantidad /8.799,
                         centilitro: cantidad => cantidad *113.652,
-                        galon: cantidad => cantidad /3.331                        ,
+                        galon: cantidad => cantidad /3.331                 ,
                         qtr: cantidad => cantidad * 1.201,
                         pt: cantidad => cantidad * 2.402,
                         taza: cantidad => cantidad * 4.736,                        
@@ -1409,8 +1555,8 @@ function calcularTemp(){
                         m3: cantidad => cantidad / 879.9,
                         ml: cantidad => cantidad * 1137,
                         gal: cantidad => cantidad /4,
-                        ctimperial: cantidad => cantidad * 35.274,
-                        ptImperial: cantidad => cantidad * 2,
+                        
+                        ptimperial: cantidad => cantidad * 2,
                         tazaImperial: cantidad => cantidad * 4,
                         ozLiquidaImperial: cantidad => cantidad * 40,
                         cucharadaImperial: cantidad => cantidad * 64,
@@ -1467,7 +1613,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 284.1,
                         gal: cantidad => cantidad /16,
                         ctimperial: cantidad => cantidad / 4,
-                        ptImperial: cantidad => cantidad /2,
+                        ptimperial: cantidad => cantidad /2,
                     
                         ozLiquidaImperial: cantidad => cantidad * 10,
                         cucharadaImperial: cantidad => cantidad * 16,
@@ -1495,7 +1641,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad *28.413,
                         gal: cantidad => cantidad /160,
                         ctimperial: cantidad => cantidad /40,
-                        ptImperial: cantidad => cantidad /20,
+                        ptimperial: cantidad => cantidad /20,
                         tazaImperial: cantidad => cantidad /10,
                         
                         cucharadaImperial: cantidad => cantidad * 1.6,
@@ -1523,7 +1669,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad *17.758,
                         gal: cantidad => cantidad /256,
                         ctimperial: cantidad => cantidad /64,
-                        ptImperial: cantidad => cantidad /32,
+                        ptimperial: cantidad => cantidad /32,
                         tazaImperial: cantidad => cantidad /16,
                         ozLiquidaImperial: cantidad => cantidad /1.6,
                         
@@ -1551,7 +1697,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 5.919,
                         gal: cantidad => cantidad /768,
                         ctimperial: cantidad => cantidad /192,
-                        ptImperial: cantidad => cantidad  /96,
+                        ptimperial: cantidad => cantidad  /96,
                         tazaImperial: cantidad => cantidad /48,
                         ozLiquidaImperial: cantidad => cantidad /4.8,
                         cucharadaImperial: cantidad => cantidad /3,
@@ -1579,7 +1725,7 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 28320,
                         gal: cantidad => cantidad * 6.229,
                         ctimperial: cantidad => cantidad * 24.915,
-                        ptImperial: cantidad => cantidad * 49.831,
+                        ptimperial: cantidad => cantidad * 49.831,
                         tazaImperial: cantidad => cantidad * 99.661,
                         ozLiquidaImperial: cantidad => cantidad * 996.6,
                         cucharadaImperial: cantidad => cantidad * 1595,
@@ -1607,12 +1753,39 @@ function calcularTemp(){
                         ml: cantidad => cantidad * 16.387,
                         gal: cantidad => cantidad /277.4,
                         ctimperial: cantidad => cantidad /69.355,
-                        ptImperial: cantidad => cantidad /34.677,
+                        ptimperial: cantidad => cantidad /34.677,
                         tazaImperial: cantidad => cantidad /17.339,
                         ozLiquidaImperial: cantidad => cantidad /1.734,
                         cucharadaImperial: cantidad => cantidad /1.084,
                         cucharaditaImperial: cantidad => cantidad * 2.768,
                         pie3: cantidad => cantidad /1728,
+                        
+                        
+                    },
+                    ml: {
+                        litro: cantidad => cantidad /1000,
+                        decilitro: cantidad => cantidad /100                       ,
+                        hectolitro: cantidad => cantidad /100000                        ,
+                        kilolitro: cantidad => cantidad /1e+6                   ,
+                        decalitro: cantidad => cantidad /10000                     ,
+                        centilitro: cantidad => cantidad /10              ,
+                        galon: cantidad => cantidad /3785                        ,
+                        qtr: cantidad => cantidad / 946.4                        ,
+                        pt: cantidad => cantidad /473.2,
+                        taza: cantidad => cantidad /240,                        
+                        onza: cantidad => cantidad /  29.574                        ,
+                        cucharada: cantidad => cantidad /14.787                        ,
+                        cucharadita: cantidad => cantidad /4.929                        ,
+                        m3: cantidad => cantidad /1e+6                        ,
+                        pulgada3:cantidad => cantidad /16.387                        ,
+                        gal: cantidad => cantidad /4546,
+                        ctimperial: cantidad => cantidad /1137                        ,
+                        ptimperial: cantidad => cantidad /568.3                        ,
+                        tazaImperial: cantidad => cantidad /284.1,
+                        ozLiquidaImperial: cantidad => cantidad /28.413                        ,
+                        cucharadaImperial: cantidad => cantidad /17.758                        ,
+                        cucharaditaImperial: cantidad => cantidad / 5.919                        ,
+                        pie3: cantidad => cantidad /28320                        ,
                         
                         
                     },
@@ -1625,11 +1798,11 @@ function calcularTemp(){
                 let unidad2 = document.getElementById("unidad2").value;
                 let cantidad = parseFloat(document.getElementById("cantidad").value);
                 let resultado = document.getElementById("resultado");
-                let resultadoConversion = conversiones[unidad][unidad2](cantidad);
+               
                 
                 if (unidad in conversiones && unidad2 in conversiones[unidad]) {
                     
-                    
+                    let resultadoConversion = conversiones[unidad][unidad2](cantidad);
                     resultado.textContent = `${cantidad} ${nombresUnidades[unidad]} son ${resultadoConversion} ${nombresUnidades[unidad2]}`;
                 } else {
                     resultado.textContent = "Por favor, selecciona una unidad válida.";
