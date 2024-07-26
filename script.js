@@ -307,7 +307,7 @@ else if ( unidad === "mic" && unidad2 === "hect"){
     resultado.textContent = cantidad + " micrómetros son  " + mic + " hectómetros"
 }
 else if ( unidad === "mic" && unidad2 === "deca"){
-    let mic = cantidad / 1e+7
+    let mic = cantidad * 1e+7
     resultado.textContent = cantidad + " micrómetros son  " + mic + " decámetros"
 }
 else if ( unidad === "mic" && unidad2 === "deci"){
